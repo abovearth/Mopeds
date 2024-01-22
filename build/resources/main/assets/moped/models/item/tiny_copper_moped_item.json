@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "moped:item/tiny_copper_moped_item"
-  }
-}

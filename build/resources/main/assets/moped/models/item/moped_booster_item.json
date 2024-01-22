@@ -1,7 +1,0 @@
-{
-  "parent": "moped:custom/moped_booster",
-  "textures": {
-    "0": "moped:block/mopedboosted3",
-    "particle": "moped:item/moped_booster"
-  }
-}

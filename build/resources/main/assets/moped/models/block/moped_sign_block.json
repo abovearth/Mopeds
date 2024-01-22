@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "moped:block/mopedsign",
-    "particle": "moped:block/mopedsign"
-  },
-  "render_type": "cutout"
-}
