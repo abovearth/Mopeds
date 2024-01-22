@@ -1,0 +1,25 @@
+{
+  "_fv": 47,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "P marks the spot",
+    "achievementDescription": "Place any sign block from the Moped mod",
+    "achievementIcon": {
+      "value": "CUSTOM:ParkingSignBlue"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:CopperMopedRoot"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"block_placed\" x=\"36\" y=\"2\"><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:ParkingSignBlue</field></block></value></block><block type=\"custom_trigger\" x=\"69\" y=\"66\"><next><block type=\"advancement_trigger\"></block></next></block></xml>"
+  }
+}

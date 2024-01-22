@@ -1,0 +1,11 @@
+{
+  "_fv": 47,
+  "_type": "tab",
+  "definition": {
+    "name": "Mopeds Tab",
+    "icon": {
+      "value": "CUSTOM:CopperMopedItem"
+    },
+    "showSearch": false
+  }
+}

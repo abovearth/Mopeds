@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "moped:block/mopedsignblue",
+    "particle": "moped:block/mopedsignblue"
+  },
+  "render_type": "solid"
+}

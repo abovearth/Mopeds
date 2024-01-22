@@ -1,0 +1,81 @@
+{
+  "minecraft:recipes/building_blocks/copper_block": {
+    "criteria": {
+      "has_copper_ingot": "2024-01-18 21:12:37 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/brush": {
+    "criteria": {
+      "has_copper_ingot": "2024-01-18 21:12:37 +0100"
+    },
+    "done": true
+  },
+  "moped:copper_moped_root": {
+    "criteria": {
+      "copper_moped_root": "2024-01-18 21:12:37 +0100"
+    },
+    "done": true
+  },
+  "moped:moped_honk": {
+    "criteria": {
+      "moped_honk": "2024-01-18 21:13:50 +0100"
+    },
+    "done": true
+  },
+  "moped:moped_key_adv": {
+    "criteria": {
+      "moped_key_adv": "2024-01-18 21:13:25 +0100"
+    },
+    "done": true
+  },
+  "moped:booster_adv": {
+    "criteria": {
+      "booster_adv": "2024-01-18 21:13:57 +0100"
+    },
+    "done": true
+  },
+  "moped:fully_upgraded_moped": {
+    "criteria": {
+      "fully_upgraded_moped": "2024-01-18 21:14:09 +0100"
+    },
+    "done": true
+  },
+  "moped:copper_moped_adv": {
+    "criteria": {
+      "copper_moped_adv": "2024-01-18 21:13:06 +0100"
+    },
+    "done": true
+  },
+  "moped:tiny_copper_moped_adv": {
+    "criteria": {
+      "tiny_copper_moped_adv": "2024-01-18 21:14:18 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-01-18 21:12:17 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/lightning_rod": {
+    "criteria": {
+      "has_copper_ingot": "2024-01-18 21:12:37 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:forest": "2024-01-18 21:12:31 +0100"
+    },
+    "done": false
+  },
+  "moped:sign_adv": {
+    "criteria": {
+      "sign_adv": "2024-01-18 21:13:17 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "moped:moped_sign_block"
+  },
+  "result": "minecraft:glass"
+}

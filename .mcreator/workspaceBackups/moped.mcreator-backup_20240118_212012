@@ -1,0 +1,1372 @@
+{
+  "mod_elements": [
+    {
+      "name": "CopperMoped",
+      "type": "animatedentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_moped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/client/renderer/CopperMopedRenderer.java",
+          "src/main/java/net/mcreator/moped/entity/layer/CopperMopedLayer.java",
+          "src/main/java/net/mcreator/moped/entity/model/CopperMopedModel.java",
+          "src/main/java/net/mcreator/moped/entity/CopperMopedEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperMopedOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_moped_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/CopperMopedOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MopedMakesSound",
+      "type": "potioneffect",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_makes_sound",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/potion/MopedMakesSoundMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperMopedItemRecipe",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_moped_item_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/copper_moped_item_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CopperMopedItem",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_moped_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/item/CopperMopedItemItem.java",
+          "src/main/resources/assets/moped/models/item/copper_moped_item.json"
+        ]
+      }
+    },
+    {
+      "name": "CopperMopedItemRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_moped_item_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/CopperMopedItemRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CopperMopedEntityDies",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_moped_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/CopperMopedEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CopperMopedItemRecipeCreate",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_moped_item_recipe_create",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/copper_moped_item_recipe_create.json"
+        ]
+      }
+    },
+    {
+      "name": "CopperMopedAdv",
+      "type": "achievement",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_moped_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/advancements/copper_moped_adv.json"
+        ]
+      }
+    },
+    {
+      "name": "CopperMopedRoot",
+      "type": "achievement",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_moped_root",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/advancements/copper_moped_root.json"
+        ]
+      }
+    },
+    {
+      "name": "MopedGUI",
+      "type": "gui",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/client/gui/MopedGUIScreen.java",
+          "src/main/java/net/mcreator/moped/world/inventory/MopedGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Mopeds",
+      "type": "tag",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mopeds",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/tags/entity_types/mopeds.json"
+        ]
+      }
+    },
+    {
+      "name": "OutOfFuelOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "out_of_fuel_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/OutOfFuelOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OutOfFuel",
+      "type": "potioneffect",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "out_of_fuel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/potion/OutOfFuelMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "HasFuel",
+      "type": "potioneffect",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "has_fuel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/potion/HasFuelMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "MopedBoosterItem",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_booster_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/moped/models/item/moped_booster_item.json",
+          "src/main/java/net/mcreator/moped/item/MopedBoosterItemItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EntityProviderMopedGUI",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_provider_moped_gui",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/EntityProviderMopedGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BoosterAdv",
+      "type": "achievement",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "booster_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/advancements/booster_adv.json"
+        ]
+      }
+    },
+    {
+      "name": "MopedBoosterRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_booster_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/moped_booster_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "FullyUpgradedMoped",
+      "type": "achievement",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fully_upgraded_moped",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/advancements/fully_upgraded_moped.json"
+        ]
+      }
+    },
+    {
+      "name": "GrantFullyUpgradedAdvancement",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grant_fully_upgraded_advancement",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/GrantFullyUpgradedAdvancementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MopedsTab",
+      "type": "tab",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mopeds_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "MopedSignBlock",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_sign_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/moped/models/item/moped_sign_block.json",
+          "src/main/resources/assets/moped/models/block/moped_sign_block.json",
+          "src/main/resources/assets/moped/blockstates/moped_sign_block.json",
+          "src/main/java/net/mcreator/moped/block/MopedSignBlockBlock.java"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "MopedSignBlueBlock",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_sign_blue_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/moped/models/block/moped_sign_blue_block.json",
+          "src/main/resources/assets/moped/models/item/moped_sign_blue_block.json",
+          "src/main/resources/assets/moped/blockstates/moped_sign_blue_block.json",
+          "src/main/java/net/mcreator/moped/block/MopedSignBlueBlockBlock.java"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "ParkingSignBlue",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parking_sign_blue_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/moped/models/item/parking_sign_blue_block.json",
+          "src/main/resources/assets/moped/blockstates/parking_sign_blue_block.json",
+          "src/main/java/net/mcreator/moped/block/ParkingSignBlueBlock.java",
+          "src/main/resources/assets/moped/models/block/parking_sign_blue_block.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "MopedSignTrapDoor",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_sign_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/moped/models/block/moped_sign_trapdoor_open.json",
+          "src/main/resources/assets/moped/models/block/moped_sign_trapdoor.json",
+          "src/main/resources/assets/moped/models/block/moped_sign_trapdoor_top.json",
+          "src/main/java/net/mcreator/moped/block/MopedSignTrapDoorBlock.java",
+          "src/main/resources/assets/moped/blockstates/moped_sign_trapdoor.json",
+          "src/main/resources/assets/moped/models/item/moped_sign_trapdoor.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "MopedSignBlueTrapDoor",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_sign_blue_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/block/MopedSignBlueTrapDoorBlock.java",
+          "src/main/resources/assets/moped/models/item/moped_sign_blue_trapdoor.json",
+          "src/main/resources/assets/moped/blockstates/moped_sign_blue_trapdoor.json",
+          "src/main/resources/assets/moped/models/block/moped_sign_blue_trapdoor.json",
+          "src/main/resources/assets/moped/models/block/moped_sign_blue_trapdoor_top.json",
+          "src/main/resources/assets/moped/models/block/moped_sign_blue_trapdoor_open.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "ParkingSignTrapDoor",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parking_sign_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/moped/models/item/parking_sign_trapdoor.json",
+          "src/main/resources/assets/moped/models/block/parking_sign_trapdoor_top.json",
+          "src/main/resources/assets/moped/models/block/parking_sign_trapdoor.json",
+          "src/main/java/net/mcreator/moped/block/ParkingSignTrapDoorBlock.java",
+          "src/main/resources/assets/moped/blockstates/parking_sign_trapdoor.json",
+          "src/main/resources/assets/moped/models/block/parking_sign_trapdoor_open.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "MopedSignBlockRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_sign_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/moped_sign_block_recipe.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "MopedSignBlockUncraftRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_sign_block_uncraft_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/moped_sign_block_uncraft_recipe.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "MopedSignBlueBlockRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_sign_blue_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/moped_sign_blue_block_recipe.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "MopedSignBlueBlockUncraftingRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_sign_blue_block_uncrafting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/moped_sign_blue_block_uncrafting_recipe.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "ParkingSignBlueBlockRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parking_sign_blue_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/parking_sign_blue_block_recipe.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "ParkingSignBlueBlockUncraftingRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parking_sign_blue_block_uncrafting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/parking_sign_blue_block_uncrafting_recipe.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "MopedSignBlueTrapdoorRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_sign_blue_trapdoor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/moped_sign_blue_trapdoor_recipe.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "MopedSignTrapdoorRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_sign_trapdoor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/moped_sign_trapdoor_recipe.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "ParkingSignBlueTrapdoorRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parking_sign_blue_trapdoor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/parking_sign_blue_trapdoor_recipe.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "EmptySignBlue",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_sign_blue_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/moped/models/block/empty_sign_blue_block.json",
+          "src/main/resources/assets/moped/models/item/empty_sign_blue_block.json",
+          "src/main/resources/assets/moped/blockstates/empty_sign_blue_block.json",
+          "src/main/java/net/mcreator/moped/block/EmptySignBlueBlock.java"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "EmptySignBlueTrapdoor",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_sign_blue_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/block/EmptySignBlueTrapdoorBlock.java",
+          "src/main/resources/assets/moped/models/block/empty_sign_blue_trapdoor_top.json",
+          "src/main/resources/assets/moped/models/item/empty_sign_blue_trapdoor.json",
+          "src/main/resources/assets/moped/blockstates/empty_sign_blue_trapdoor.json",
+          "src/main/resources/assets/moped/models/block/empty_sign_blue_trapdoor.json",
+          "src/main/resources/assets/moped/models/block/empty_sign_blue_trapdoor_open.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "EmptySignBlueTrapdoorRecipe",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_sign_blue_trapdoor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/empty_sign_blue_trapdoor_recipe.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "EmptySignBlueBlockRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_sign_blue_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/empty_sign_blue_block_recipe.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "EmptySignBlueBlockUncraftingRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_sign_blue_block_uncrafting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/empty_sign_blue_block_uncrafting_recipe.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "UpdateNrOfBoostersNBT",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_nr_of_boosters_nbt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/UpdateNrOfBoostersNBTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChangeMopedModel",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "change_moped_model",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/ChangeMopedModelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayerUpdatesMopedModels",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_updates_moped_models",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/PlayerUpdatesMopedModelsProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "CopperMopedOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_moped_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/CopperMopedOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "TinyCopperMoped",
+      "type": "animatedentity",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tiny_copper_moped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/client/renderer/TinyCopperMopedRenderer.java",
+          "src/main/java/net/mcreator/moped/entity/layer/TinyCopperMopedLayer.java",
+          "src/main/java/net/mcreator/moped/entity/TinyCopperMopedEntity.java",
+          "src/main/java/net/mcreator/moped/entity/model/TinyCopperMopedModel.java"
+        ]
+      }
+    },
+    {
+      "name": "TinyCopperMopedItem",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiny_copper_moped_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/item/TinyCopperMopedItemItem.java",
+          "src/main/resources/assets/moped/models/item/tiny_copper_moped_item.json"
+        ]
+      }
+    },
+    {
+      "name": "TinyCopperMopedItemRightclick",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiny_copper_moped_item_rightclick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/TinyCopperMopedItemRightclickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TinyCopperMopedEntityDies",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiny_copper_moped_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/TinyCopperMopedEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TinyCopperMopedAdv",
+      "type": "achievement",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiny_copper_moped_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/advancements/tiny_copper_moped_adv.json"
+        ]
+      }
+    },
+    {
+      "name": "TinyCopperMopedItemRecipe",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiny_copper_moped_item_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/tiny_copper_moped_item_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MopedBeeperRightclicked",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_beeper_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/MopedBeeperRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MopedHonk",
+      "type": "achievement",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_honk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/advancements/moped_honk.json"
+        ]
+      }
+    },
+    {
+      "name": "TinyCopperMopedItemCreateRecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tiny_copper_moped_item_create_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/tiny_copper_moped_item_create_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SignAdv",
+      "type": "achievement",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/advancements/sign_adv.json"
+        ]
+      }
+    },
+    {
+      "name": "SignAdvUnlock",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_adv_unlock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/SignAdvUnlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "MopedSigns",
+      "type": "tag",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_signs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/tags/blocks/moped_signs.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "MopedKey",
+      "type": "item",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_key",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/moped/models/item/moped_key.json",
+          "src/main/java/net/mcreator/moped/item/MopedKeyItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperMopedRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_moped_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MopedLessFallDamage",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_less_fall_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moped/procedures/MopedLessFallDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MopedKeyRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_key_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/recipes/moped_key_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Frameable",
+      "type": "tag",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frameable",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/framedblocks/tags/blocks/frameable.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
+    },
+    {
+      "name": "MopedKeyAdv",
+      "type": "achievement",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moped_key_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/moped/advancements/moped_key_adv.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "moped.engine.start",
+      "files": [
+        "moped_engine_start"
+      ],
+      "category": "neutral",
+      "subtitle": "Moped engine starts"
+    },
+    {
+      "name": "moped.engine.idling",
+      "files": [
+        "moped_engine_running"
+      ],
+      "category": "neutral",
+      "subtitle": "Moped engine idling"
+    },
+    {
+      "name": "moped.engine.revving",
+      "files": [
+        "moped_engine_rev"
+      ],
+      "category": "neutral",
+      "subtitle": "Moped engine revs"
+    },
+    {
+      "name": "moped.engine.stops",
+      "files": [
+        "moped_engine_stops"
+      ],
+      "category": "neutral",
+      "subtitle": "Moped engine stops"
+    },
+    {
+      "name": "moped.engine.rev1",
+      "files": [
+        "moped_engine_rev1"
+      ],
+      "category": "neutral",
+      "subtitle": "Moped engine revs"
+    },
+    {
+      "name": "moped.hurt",
+      "files": [
+        "moped_hurt"
+      ],
+      "category": "neutral",
+      "subtitle": "Moped takes damage"
+    },
+    {
+      "name": "moped.breaks",
+      "files": [
+        "moped_falls_apart"
+      ],
+      "category": "neutral",
+      "subtitle": "Moped falls to pieces"
+    },
+    {
+      "name": "moped.fuel.bubbles",
+      "files": [
+        "bubbles"
+      ],
+      "category": "neutral",
+      "subtitle": "Fuel in moped bubbles"
+    },
+    {
+      "name": "moped.fuel.burns",
+      "files": [
+        "fire-short-swoosh"
+      ],
+      "category": "neutral",
+      "subtitle": "Moped fuel burns"
+    },
+    {
+      "name": "moped.sound.silence",
+      "files": [
+        "silence"
+      ],
+      "category": "neutral",
+      "subtitle": " Moped moves"
+    },
+    {
+      "name": "moped.engine.rev2",
+      "files": [
+        "moped_engine_rev2"
+      ],
+      "category": "neutral",
+      "subtitle": "Moped engine revs"
+    },
+    {
+      "name": "moped.horn.honks",
+      "files": [
+        "moped_horn"
+      ],
+      "category": "neutral",
+      "subtitle": "Moped horn honks"
+    },
+    {
+      "name": "moped.breaks2",
+      "files": [
+        "moped_falls_apart_lower_volume"
+      ],
+      "category": "neutral",
+      "subtitle": "Moped falls to pieces"
+    },
+    {
+      "name": "moped.hurt2",
+      "files": [
+        "moped_hurt_lower_volume"
+      ],
+      "category": "neutral",
+      "subtitle": "Moped takes damage"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "effect.moped.out_of_fuel": "Out Of Fuel",
+      "item.moped.copper_moped_spawn_egg": "Copper Moped Spawn Egg",
+      "advancements.sign_adv.title": "P marks the spot",
+      "advancements.fully_upgraded_moped.title": "Now this is podracing",
+      "entity.moped.tiny_copper_moped": "Tiny Copper Moped",
+      "subtitles.moped.breaks2": "Moped falls to pieces",
+      "subtitles.moped.hurt2": "Moped takes damage",
+      "item.moped.moped_booster_item": "Moped Booster Upgrade",
+      "gui.moped.moped_gui.button_test": "test",
+      "block.moped.moped_sign_trapdoor": "Transparent Moped Sign Trapdoor",
+      "advancements.sign_adv.descr": "Place any sign block from the Moped mod",
+      "gui.moped.moped_gui.label_moped_inventory": "Moped Inventory",
+      "subtitles.moped.sound.silence": " Moped moves",
+      "advancements.booster_adv.descr": "You have build a Moped Booster",
+      "advancements.copper_moped_adv.title": "Horse Go Vroom",
+      "block.moped.parking_sign_blue_block": "Parking Sign Block",
+      "subtitles.moped.engine.stops": "Moped engine stops",
+      "subtitles.moped.engine.runs": "Moped engine runs",
+      "item.moped.copper_moped_item": "Copper Moped",
+      "advancements.tiny_copper_moped_adv.title": "Pony Go Vroom",
+      "advancements.moped_key_adv.title": "How do I fuel this thing?",
+      "subtitles.moped.breaks": "Moped falls to pieces",
+      "subtitles.moped.fuel.bubbles": "Fuel in moped bubbles",
+      "advancements.moped_honk.title": "Honk!!!1!",
+      "advancements.moped_key_adv.descr": "You\u0027ll need a key to open the moped\u0027s fuel tank",
+      "item.moped.moped_key": "Moped Key",
+      "subtitles.moped.horn.honks": "Moped horn honks",
+      "advancements.copper_moped_root.title": "Wanna Go For a Ride?",
+      "item.moped.tiny_copper_moped_item": "Tiny Copper Moped",
+      "subtitles.moped.hurt": "Moped takes damage",
+      "effect.moped.has_fuel": "Has Fuel",
+      "effect.moped.moped_makes_sound": "Engine is running",
+      "item_group.moped.mopeds_tab": "Mopeds Tab",
+      "advancements.tiny_copper_moped_adv.descr": "You have build a Tiny Copper Moped",
+      "advancements.copper_moped_root.descr": "You have installed the Copper Moped mod, and hopefully Create.",
+      "block.moped.parking_sign_trapdoor": "Parking Sign Trapdoor",
+      "subtitles.moped.engine.rev2": "Moped engine revs",
+      "subtitles.moped.engine.rev1": "Moped engine revs",
+      "block.moped.empty_sign_blue_trapdoor": "Blue Empty Sign Trapdoor",
+      "gui.moped.moped_gui.label_boosters": "Boosters",
+      "block.moped.empty_sign_blue_block": "Blue Empty Sign Block",
+      "advancements.fully_upgraded_moped.descr": "Add 3 boosters to a moped, and ride it.",
+      "subtitles.moped.engine.idling": "Moped engine idling",
+      "advancements.moped_honk.descr": "A moped honks",
+      "subtitles.moped.engine.start": "Moped engine starts",
+      "subtitles.moped.engine.revving": "Moped engine revs",
+      "subtitles.moped.fuel.burns": "Moped fuel burns",
+      "advancements.booster_adv.title": "Upgrades, people. Upgrades.",
+      "block.moped.moped_sign_blue_trapdoor": "Moped Sign Trapdoor",
+      "block.moped.moped_sign_blue_block": "Moped Sign Block",
+      "item.moped.tiny_copper_moped_spawn_egg": "Tiny Copper Moped Spawn Egg",
+      "advancements.copper_moped_adv.descr": "You have build a Copper Moped",
+      "entity.moped.copper_moped": "Copper Moped",
+      "block.moped.moped_sign_block": "Transparent Moped Sign Block"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "ParkingSigns",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "moped",
+    "modName": "Moped",
+    "version": "1.0.0",
+    "author": "abovearth, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer",
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.moped",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}
