@@ -22,44 +22,48 @@ public class UpdateNrOfBoostersNBTProcedure {
 		double NrOfBoosters = 0;
 		{
 			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(64 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("moped:mopeds")))) {
-					NrOfBoosters = 0;
-					if ((new Object() {
-						public ItemStack getItemStack(int sltid, Entity entity) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								_retval.set(capability.getStackInSlot(sltid).copy());
-							});
-							return _retval.get();
+					try {
+						NrOfBoosters = 0;
+						if ((new Object() {
+							public ItemStack getItemStack(int sltid, Entity entity) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									_retval.set(capability.getStackInSlot(sltid).copy());
+								});
+								return _retval.get();
+							}
+						}.getItemStack(1, entityiterator)).getItem() == MopedModItems.MOPED_BOOSTER_ITEM.get()) {
+							NrOfBoosters = NrOfBoosters + 1;
 						}
-					}.getItemStack(1, entityiterator)).getItem() == MopedModItems.MOPED_BOOSTER_ITEM.get()) {
-						NrOfBoosters = NrOfBoosters + 1;
-					}
-					if ((new Object() {
-						public ItemStack getItemStack(int sltid, Entity entity) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								_retval.set(capability.getStackInSlot(sltid).copy());
-							});
-							return _retval.get();
+						if ((new Object() {
+							public ItemStack getItemStack(int sltid, Entity entity) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									_retval.set(capability.getStackInSlot(sltid).copy());
+								});
+								return _retval.get();
+							}
+						}.getItemStack(2, entityiterator)).getItem() == MopedModItems.MOPED_BOOSTER_ITEM.get()) {
+							NrOfBoosters = NrOfBoosters + 1;
 						}
-					}.getItemStack(2, entityiterator)).getItem() == MopedModItems.MOPED_BOOSTER_ITEM.get()) {
-						NrOfBoosters = NrOfBoosters + 1;
-					}
-					if ((new Object() {
-						public ItemStack getItemStack(int sltid, Entity entity) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								_retval.set(capability.getStackInSlot(sltid).copy());
-							});
-							return _retval.get();
+						if ((new Object() {
+							public ItemStack getItemStack(int sltid, Entity entity) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									_retval.set(capability.getStackInSlot(sltid).copy());
+								});
+								return _retval.get();
+							}
+						}.getItemStack(3, entityiterator)).getItem() == MopedModItems.MOPED_BOOSTER_ITEM.get()) {
+							NrOfBoosters = NrOfBoosters + 1;
 						}
-					}.getItemStack(3, entityiterator)).getItem() == MopedModItems.MOPED_BOOSTER_ITEM.get()) {
-						NrOfBoosters = NrOfBoosters + 1;
+						entityiterator.getPersistentData().putDouble("NrOfBoosters", NrOfBoosters);
+					} catch (RuntimeException exc) {
+						System.out.println("Caught an exception: " + exc + " This is likely caused by an old version of a moped in the world.");
 					}
-					entityiterator.getPersistentData().putDouble("NrOfBoosters", NrOfBoosters);
 				}
 			}
 		}

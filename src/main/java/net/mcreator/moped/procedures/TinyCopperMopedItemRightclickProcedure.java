@@ -10,21 +10,22 @@ import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.moped.init.MopedModEntities;
 
 public class TinyCopperMopedItemRightclickProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
-		if (entity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Direction direction, Entity entity, ItemStack itemstack) {
+		if (direction == null || entity == null)
 			return;
 		double position = 0;
 		Entity entityToSpawn = null;
 		/*I need the next procedure block to introduce the world dependency*/
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.ASH, x, y, z, 0, 3, 3, 3, 1);
+			_level.sendParticles(ParticleTypes.ASH, x, (y + direction.getStepY()), z, 0, 3, 3, 3, 1);
 		if (world instanceof ServerLevel _level) {
-			entityToSpawn = MopedModEntities.TINY_COPPER_MOPED.get().spawn(_level, BlockPos.containing(x, y + 1, z), MobSpawnType.MOB_SUMMONED);
+			entityToSpawn = MopedModEntities.TINY_COPPER_MOPED.get().spawn(_level, BlockPos.containing(x + direction.getStepX(), y + direction.getStepY(), z + direction.getStepZ()), MobSpawnType.MOB_SUMMONED);
 			if (entityToSpawn != null) {
 				entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 			}

@@ -99,7 +99,7 @@ public class TinyCopperMopedEntity extends PathfinderMob implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "moped3");
+		this.entityData.define(TEXTURE, "moped0");
 	}
 
 	public void setTexture(String texture) {
