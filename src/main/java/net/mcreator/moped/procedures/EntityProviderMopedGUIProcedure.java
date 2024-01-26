@@ -3,6 +3,7 @@ package net.mcreator.moped.procedures;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.moped.entity.TinyCopperMopedEntity;
@@ -11,9 +12,14 @@ import net.mcreator.moped.entity.CopperMopedEntity;
 import java.util.Comparator;
 
 public class EntityProviderMopedGUIProcedure {
-	public static Entity execute(LevelAccessor world, double x, double y, double z) {
+	public static Entity execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
+			return null;
 		Entity output = null;
 		double cubedistancesize = 0;
+		//Next procedure block is just there to get the entity dependency
+		if (entity instanceof Player _player)
+			_player.giveExperiencePoints(0);
 		cubedistancesize = 0;
 		while (output == null || cubedistancesize >= 16) {
 			output = (Entity) world.getEntitiesOfClass(CopperMopedEntity.class, AABB.ofSize(new Vec3(x, y, z), cubedistancesize, cubedistancesize, cubedistancesize), e -> true).stream().sorted(new Object() {
@@ -29,6 +35,7 @@ public class EntityProviderMopedGUIProcedure {
 				}.compareDistOf(x, y, z)).findFirst().orElse(null);
 			}
 			cubedistancesize = cubedistancesize + 1;
+			CloseMopedGUIWhenMopedTooFarProcedure.execute(entity, cubedistancesize);
 		}
 		return output;
 	}

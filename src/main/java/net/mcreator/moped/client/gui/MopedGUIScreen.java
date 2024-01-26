@@ -40,7 +40,7 @@ public class MopedGUIScreen extends AbstractContainerScreen<MopedGUIMenu> {
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		if (EntityProviderMopedGUIProcedure.execute(world, x, y, z) instanceof LivingEntity livingEntity) {
+		if (EntityProviderMopedGUIProcedure.execute(world, x, y, z, entity) instanceof LivingEntity livingEntity) {
 			InventoryScreen.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 80, this.topPos + 64, 30, 0f + (float) Math.atan((this.leftPos + 80 - mouseX) / 40.0), (float) Math.atan((this.topPos + 14 - mouseY) / 40.0), livingEntity);
 		}
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
