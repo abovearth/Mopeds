@@ -1198,6 +1198,20 @@
           }
         ]
       }
+    },
+    {
+      "name": "CreateWrenchPickup",
+      "type": "tag",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "create_wrench_pickup",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create/tags/blocks/wrench_pickup.json"
+        ]
+      },
+      "path": "~/ParkingSigns"
     }
   ],
   "variable_elements": [],
@@ -1319,8 +1333,8 @@
     "en_us": {
       "effect.moped.out_of_fuel": "Out Of Fuel",
       "item.moped.copper_moped_spawn_egg": "Copper Moped Spawn Egg",
-      "advancements.fully_upgraded_moped.title": "Now this is podracing",
       "advancements.sign_adv.title": "P marks the spot",
+      "advancements.fully_upgraded_moped.title": "Now this is podracing",
       "entity.moped.tiny_copper_moped": "Tiny Copper Moped",
       "subtitles.moped.breaks2": "Moped falls to pieces",
       "subtitles.moped.hurt2": "Moped takes damage",
@@ -1329,8 +1343,8 @@
       "block.moped.moped_sign_trapdoor": "Transparent Moped Sign Trapdoor",
       "advancements.sign_adv.descr": "Place any sign block from the Moped mod",
       "gui.moped.moped_gui.label_moped_inventory": "Moped Inventory",
-      "advancements.booster_adv.descr": "You have build a Moped Booster",
       "subtitles.moped.sound.silence": " Moped moves",
+      "advancements.booster_adv.descr": "You have build a Moped Booster",
       "advancements.copper_moped_adv.title": "Horse Go Vroom",
       "block.moped.parking_sign_blue_block": "Parking Sign Block",
       "subtitles.moped.engine.stops": "Moped engine stops",
